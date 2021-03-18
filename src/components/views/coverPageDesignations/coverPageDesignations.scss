@@ -1,0 +1,60 @@
+@import '../../../styles/constants';
+
+.cover-page-content {
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  .cover-page-table-content {
+    overflow: hidden;
+
+    .cover-page-table-header {
+      padding: 30px 40px 20px;
+      border: 0px solid $table-row-border;
+      border-top-width: 1px;
+      border-bottom-width: 1px;
+
+      .cover-page-table-cell__header {
+        width: 150px;
+        font-weight: 600;
+      }
+    }
+
+    .cover-page-table-body {
+      overflow-y: auto;
+
+      .cover-page-table-row {
+        padding: 25px 40px;
+        border-bottom: 1px solid $table-row-border;
+
+        &.geo-details {
+          background: $color-white-smoke;
+          padding-bottom: 20px;
+        }
+      }
+      .cover-page-table-cell {
+        width: 150px;
+
+        &.geo-name {
+          font-weight: 600;
+        }
+
+        .geo-selection-info {
+          height: 18px;
+          margin-top: 10px;
+          color: $light-gray;
+          font-size: 12px;
+        }
+      }
+    }
+    .cover-page-check-cell {
+      width: 150px;
+      align-items: center;
+    }
+  }
+
+  &.read-only {
+    .cover-page-toggle {
+      opacity: .5;
+    }
+  }
+}

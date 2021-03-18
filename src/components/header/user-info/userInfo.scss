@@ -1,0 +1,47 @@
+@import "../../../styles/constants";
+#user-popover{
+  display: block;
+  height: 44px;
+}
+.user-info.nav-item-link {
+    background: transparent;
+    padding-right: 10px;
+    font-family: $font-family-display;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+      sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: $white !important;
+    &:hover {
+      opacity: 0.6;
+      text-decoration: none;
+      color: $white;
+    }
+}
+.user-info-popover{
+  .popover{
+    left: -22px !important;
+  }
+  .sub-nav-item.user-details{
+    padding: 28px 32px;
+    .sub-nav-item__label{
+      font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 19px;
+      line-height: 1.21053;
+      font-weight: 600;
+    }
+    .sub-nav-item__description{
+      display: block;
+      font-weight: 400;
+      color: #888;
+    }
+  }
+  .sub-nav-item.logout-button {
+    border-top: 1px solid $border-color;
+    margin: 0;
+    padding: 19px 32px;
+  }
+}
+.css-qeh6kt {
+  vertical-align: middle !important;
+}

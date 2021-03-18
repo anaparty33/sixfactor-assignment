@@ -1,0 +1,104 @@
+@import "../../styles/constants";
+
+.section {
+  height: 44px;
+
+  &__global-nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: $header-background;
+    height: 44px;
+    padding: 0 28px;
+    letter-spacing: -0.016em;
+    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+      sans-serif;
+    font-size: 14px;
+    line-height: 1.42861;
+    font-weight: 400;
+    color: $white;
+
+    ul {
+      display: flex;
+      margin: 0;
+      margin-bottom: 0px !important;
+      list-style: none;
+
+      li {
+        display: inline-block;
+      }
+    }
+    &__nav-item {
+      height: 44px;
+      vertical-align: middle;
+      line-height: 44px; 
+    }
+  }
+  &__nav-item {
+    &__nav-item-link {
+      z-index: 1;
+      box-sizing: border-box;
+      white-space: nowrap;
+      text-decoration: none !important;
+      font-size: 16px;
+      font-weight: 500;
+      color: $white !important;
+      .apple-icon {
+        &::before {
+          content: "";
+          margin-right: 10px;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+#header-menu{
+  display: block;
+  height: 44px;
+  svg{
+    margin-top: -2px;
+    margin-left: 8px;
+    width: 40px;
+    cursor: pointer;
+    fill: $white;
+  }
+}
+.menu-popover.user-info-popover{
+  .popover {
+    top: 6px !important;
+  }
+}
+.menu-popover.navigation-menu{
+  .popover {
+    top: 36px !important;
+    left: 145.5px !important;
+    transform: none !important;
+    width: 300px;
+  }
+  ul{
+    padding: 15px 0;
+  }
+  .sub-nav-item.group-title{
+    font-size: 13px;
+    color: #a5a1a9;
+  }
+  .sub-nav-item .sub-nav-item__link{
+    &:not(.disabled):after{
+      content: '';
+      display: inline-block;
+      margin-bottom: -1px;
+      margin-left: -5px;
+      background: url('../../assets/images/arrow.up.right-light.svg') no-repeat;
+      background-size: cover;
+      height: 19px;
+      width: 22px;
+      vertical-align: bottom;
+    }
+    &.disabled {
+      &:after {
+        opacity: .4;
+      }
+    }
+  }
+}
